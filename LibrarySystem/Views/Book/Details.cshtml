@@ -1,0 +1,17 @@
+﻿@model LibrarySystem.Models.Book
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="container mt-4">
+    <h2>@Model.Title</h2>
+    <p><strong>Автор:</strong> @Model.Author.FirstName @Model.Author.LastName</p>
+    <p><strong>Жанр:</strong> @Model.Genre.Name</p>
+    <p><strong>Година:</strong> @Model.Year</p>
+    <p><strong>Налични копия:</strong> @Model.AvailableCopies / @Model.TotalCopies</p>
+    @if (Model.Description != null)
+    {
+        <p><strong>Описание:</strong> @Model.Description</p>
+    }
+    <a asp-action="Index" class="btn btn-secondary">Назад</a>
+</div>

@@ -1,0 +1,31 @@
+body {
+    background-color: #faf7f2;
+}
+
+.navbar {
+    background: #5c3d2e !important;
+}
+
+.navbar-brand {
+    color: #f5e6d3 !important;
+    font-weight: 500;
+}
+
+.nav-link {
+    color: rgba(245, 230, 211, 0.65) !important;
+    border-radius: 5px;
+}
+
+    .nav-link:hover {
+        color: #f5e6d3 !important;
+        background: rgba(255, 255, 255, 0.12) !important;
+    }
+
+footer {
+    background: #5c3d2e;
+    color: rgba(245, 230, 211, 0.5) !important;
+}
+
+    footer a {
+        color: rgba(245, 230, 211, 0.5) !important;
+    }

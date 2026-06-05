@@ -1,0 +1,12 @@
+﻿@if (TempData["Error"] != null)
+{
+    <div style="background:#fdf0ed;border:1px solid #e8c5bb;color:#7a3a2e;border-radius:8px;font-size:13px;padding:.75rem 1rem;margin-bottom:1rem">
+        ⚠ @TempData["Error"]
+    </div>
+}
+@if (TempData["Success"] != null)
+{
+    <div style="background:#f0fdf4;border:1px solid #bbddc5;color:#2e6b3a;border-radius:8px;font-size:13px;padding:.75rem 1rem;margin-bottom:1rem">
+        ✓ @TempData["Success"]
+    </div>
+}
