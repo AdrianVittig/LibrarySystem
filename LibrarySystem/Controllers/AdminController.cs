@@ -36,6 +36,9 @@ namespace LibrarySystem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateBook(Book book)
         {
+            ModelState.Remove("Author");
+            ModelState.Remove("Genre");
+
             if (!ModelState.IsValid)
             {
                 await PopulateDropdownsAsync();
@@ -71,6 +74,8 @@ namespace LibrarySystem.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditBook(Book book)
         {
+            ModelState.Remove("Author");
+            ModelState.Remove("Genre");
             if (!ModelState.IsValid)
             {
                 await PopulateDropdownsAsync();
